@@ -6,7 +6,7 @@ import (
 )
 
 var expect1 = 1227775554
-var expect2 = 0
+var expect2 = 4174379265
 
 func TestSolve1(t *testing.T) {
 	v := solve1(aogutils.GetTest(1))
