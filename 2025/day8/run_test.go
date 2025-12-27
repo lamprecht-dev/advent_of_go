@@ -6,20 +6,16 @@ import (
 )
 
 var expect1 = 40
-var expect2 = 0
+var expect2 = 25272
 
-func TestSolve1(t *testing.T) {
-	v := solve1(aogutils.GetTest(1), 10)
+func TestSolve(t *testing.T) {
+	v := solve(aogutils.GetTest(1), 10, 1)
+	v2 := solve(aogutils.GetTest(1), 1000, 2)
 
 	if v != expect1 {
 		t.Errorf("Part 1\nExpected: %v\nBut got: %v", expect1, v)
 	}
-}
-
-func TestSolve2(t *testing.T) {
-	v := solve2(aogutils.GetTest(1))
-
-	if v != expect2 {
+	if v2 != expect2 {
 		t.Errorf("Part 2\nExpected: %v\nBut got: %v", expect2, v)
 	}
 }
